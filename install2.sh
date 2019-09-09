@@ -24,6 +24,8 @@ passwd
 
 pacman -S --noconfirm --needed pacman git openssh sudo zsh
 
+groupadd sudo
+
 useradd -m -G sudo -s /usr/bin/zsh r79
 passwd r79
 useradd -m -G sudo -s /usr/bin/zsh chloe
@@ -35,3 +37,4 @@ cp -R ./r79/.ssh /home/r79
 rm /etc/ssh/sshd_config
 cp sshd_config /etc/ssh/
 
+EDITOR=vim visudo
