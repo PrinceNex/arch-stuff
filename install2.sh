@@ -22,7 +22,7 @@ echo "127.0.1.1	$HOSTNAME.localdomain $HOSTNAME" >> /etc/hosts
 
 passwd
 
-pacman -S --noconfirm --needed pacman git openssh sudo zsh vim
+pacman -S --noconfirm --needed pacman git openssh sudo zsh vim grub
 
 groupadd sudo
 
