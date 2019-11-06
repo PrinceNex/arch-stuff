@@ -2,7 +2,7 @@
 
 timedatectl set-ntp true
 
-pacstrap /mnt base base-devel
+pacstrap /mnt base base-devel linux linux-firmware
 
 genfstab -U /mnt >> /mnt/etc/fstab
 
